@@ -1,0 +1,140 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<style>
+
+.img{
+    height:50em; background-size:full; widows: 300px;;
+    background-image:url('/src/bg9.jpeg');
+    background-position:50% 50%;
+  }
+
+</style>
+<div class="img">
+  <div ng-app = myApp class="modalContainer" >
+  
+     <div style="text-align:center" class="fontcol">
+           <h1>
+              <b><marquee>{{ title }}</marquee></b>              
+           </h1>
+           <!-- <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg=="> -->
+         </div>
+         <br>
+         <div ng-controller = "myCtrl" align="center" id="f1">
+            <br><br><br><br><br><br><br><br><br><br><br>
+             <input align="center" type = "file" accept = ".txt" id = "file1" file-model = "myFile" class="btn btn-warning"/>
+         </div>
+         <br>
+         <div align="center">
+           <!-- <button ng-click = "valpage()"> -->
+              <a href = "/src/validationpg.html">
+                 <button onclick = "valpage()" class="btn btn-danger">
+                 Upload File
+                 </button>
+              </a>
+           <!-- </button> -->
+     </div>
+</div>
+
+<script>
+  // function valpage(file1, callback, errback, timeout, interval)
+  // {
+  //    var endTime = Number(new Date()) + (timeout || 20);
+  //    interval = interval || 10;
+
+  //    (function p()
+  //    {
+  //       // If the condition is met, we are done!
+  //       if(f1)
+  //       {
+  //          callback();
+  //       }
+  //       //If the condition isnt met but the timeout hasnt elapsed, poll again
+  //       else if (Number(new Date()) < endTime)
+  //       {
+  //          setTimeout(p, interval);
+  //       }
+  //       //Didnt match and toomuch time
+  //       else
+  //       {
+  //          alert('Timed out for'+file1+':'+arguments);
+  //       }
+  //    })();
+  // }
+
+  // valpage(
+  //    function callback()
+  //    {
+  //       return document.getElementById('f1').offsetWidth > 0;
+  //    },
+  //    function ()
+  //    {
+  //       alert("File Uploaded Successfully");
+  //    },
+  //    function()
+  //    {
+  //       alert("Timeout Upload file again");
+  //    }
+  // )
+  // require("angular-background-image");
+  // var myApp = angular.module('myApp', ["backgroundImage"]);
+  
+  // myApp.directive('fileModel', ['$parse', function ($parse) {
+  //    return {
+  //       restrict: 'A',
+  //       link: function(scope, element, attrs) {
+  //          var model = $parse(attrs.fileModel);
+  //          var modelSetter = model.assign;
+           
+  //          element.bind('change', function() {
+  //             scope.$apply(function() {
+  //                modelSetter(scope, element[0].files[0]);
+  //             });
+  //          });
+  //       }
+  //    };
+  // }]);
+
+  // myApp.service('fileUpload', ['$https:', function ($https:) {
+  //    this.uploadFileToUrl = function(file, uploadUrl) {
+  //       var fd = new FormData();
+  //       fd.append('file', file);
+     
+  //       $https:.post(uploadUrl, fd, {
+  //          transformRequest: angular.identity,
+  //          headers: {'Content-Type': undefined}
+  //       })
+     
+  //       .success(function() {
+  //          console.log('File uploadedd successfully!!!')
+  //       })
+     
+  //       .error(function() {
+  //          console.log('Invalid extension of the file!!!')
+  //       });
+  //    }
+  // }]);
+
+  // myApp.controller('myCtrl', ['$scope', 'fileUpload', function($scope, fileUpload) {
+  //    $scope.uploadFile = function() {
+  //       var file = $scope.myFile;
+        
+  //       console.log('file is ' );
+  //       console.dir(file);
+        
+  //       var uploadUrl = "/fileUpload";
+  //       fileUpload.uploadFileToUrl(file, uploadUrl);
+  //    };
+  // }]);
+//    $scope.valpage = function()
+//    {
+//       window.location = "C:/Users/PRATIK BAVISKAR/testfolder/CitiBridge20/src/app/validation.html";
+//    }
+//    myApp.controller('myCtrl', ['$scope', '$location',function($scope, $location) {
+
+//    $scope.valpage = function(){   
+
+//        $location.path('C:/Users/PRATIK BAVISKAR/testfolder/CitiBridge20/src/app/validation.html');
+//    }
+// }]);
+
+</script>
+</div>

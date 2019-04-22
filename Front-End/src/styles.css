@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+.img{
+    height:50em; background-size:full; widows: 300px;;
+    background-image:url('/bg9.jpeg');
+    background-position:50% 50%;
+  }
+
+
+  .fontcol
+  {
+    color: ivory;
+  }

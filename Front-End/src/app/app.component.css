@@ -1,0 +1,18 @@
+
+.img{
+    height:50em; background-size:full; widows: 300px;;
+    background-image:url('/src/bg9.jpeg');
+    background-position:50% 50%;
+}
+
+.vimg{
+  height:50em; background-size:full; widows: 300px;;
+  background-image:url('/src/bg9.jpeg');
+  background-position:50% 50%;
+}
+
+
+  .fontcol
+  {
+    color: ivory;
+  }
